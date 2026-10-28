@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop — BASAR Kosher Butchery</title>
+  <meta name="description" content="Shop Glatt Beit Yosef beef, lamb, organ meats and specialty cuts online. Order by weight or by the cut.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Frank+Ruhl+Libre:wght@400;500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+<body data-page="shop">
+  <div id="site-header"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <span class="eyebrow">Online shop</span>
+        <h1 id="shop-title">The Butcher's Counter</h1>
+        <p id="shop-sub"></p>
+      </div>
+    </section>
+
+    <div class="shop-bar">
+      <div class="wrap shop-bar-inner" style="padding-left:24px;padding-right:24px">
+        <div class="tabs" id="tabs" role="tablist" aria-label="Categories"></div>
+        <div class="shop-controls">
+          <label class="sr-only" for="search">Search cuts</label>
+          <input class="input" id="search" type="search" placeholder="Search cuts…">
+          <label class="sr-only" for="sort">Sort</label>
+          <select class="select" id="sort">
+            <option value="default">Butcher's order</option>
+            <option value="name">Name A–Z</option>
+            <option value="price-asc">Price: low to high</option>
+            <option value="price-desc">Price: high to low</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div id="shop-list"></div>
+      <p class="disclaimer">All products subject to availability, applicable Glatt Beit Yosef certification, approved nikkur and kosher processing requirements, and applicable regulations. Prices are per lb unless stated otherwise; your final price is calculated by the actual weight of your order.</p>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/js/catalog.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

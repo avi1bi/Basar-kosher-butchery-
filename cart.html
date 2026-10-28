@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Order — BASAR Kosher Butchery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Frank+Ruhl+Libre:wght@400;500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+<body data-page="cart">
+  <div id="site-header"></div>
+
+  <main class="wrap" id="cart-wrap">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span>Your order</nav>
+    <h1 style="font-size:clamp(2.4rem,4vw,3.4rem)">Your order</h1>
+    <div class="cart-layout">
+      <div>
+        <div id="cart-list"></div>
+        <p class="fineprint" style="margin-top:20px">Prices shown are estimates. Each item is cut and weighed by hand and you are charged for the actual weight. All products subject to availability, applicable Glatt Beit Yosef certification, approved nikkur and kosher processing requirements, and applicable regulations.</p>
+        <p style="margin-top:20px"><a class="link-arrow" href="shop.html">Continue shopping</a></p>
+      </div>
+
+      <form class="summary" id="checkout">
+        <h2>Checkout</h2>
+        <div id="summary"></div>
+
+        <div class="field" style="margin-top:24px">
+          <div class="field-label">Fulfillment</div>
+          <div class="radio-cards">
+            <label class="radio-card"><input type="radio" name="fulfil" value="delivery" checked><strong>Local delivery</strong><small>Free over $250</small></label>
+            <label class="radio-card"><input type="radio" name="fulfil" value="pickup"><strong>Store pickup</strong><small>Always free</small></label>
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="full"><label for="name">Full name</label><input class="input" id="name" name="name" required autocomplete="name"></div>
+          <div><label for="phone">Phone</label><input class="input" id="phone" name="phone" type="tel" required autocomplete="tel"></div>
+          <div><label for="email">Email</label><input class="input" id="email" name="email" type="email" required autocomplete="email"></div>
+          <div class="full" id="address-fields" style="display:contents">
+            <div class="full"><label for="address">Street address</label><input class="input" id="address" name="address" required autocomplete="street-address"></div>
+            <div><label for="city">City</label><input class="input" id="city" name="city" required autocomplete="address-level2"></div>
+            <div><label for="zip">ZIP</label><input class="input" id="zip" name="zip" required autocomplete="postal-code"></div>
+          </div>
+          <div><label for="date">Date</label><input class="input" id="date" name="date" type="date" required></div>
+          <div><label for="slot">Time</label>
+            <select class="select" id="slot" name="slot">
+              <option>Morning (9–12)</option><option>Afternoon (12–4)</option><option>Evening (4–7)</option>
+            </select>
+          </div>
+          <div class="full"><label for="notes">Order notes</label><textarea class="input" id="notes" name="notes" rows="3" placeholder="Anything our butchers should know"></textarea></div>
+        </div>
+        <button class="btn btn--ox btn--block" type="submit" style="margin-top:20px">Place order request</button>
+        <p class="fineprint">No payment is taken online. We'll call to confirm your cuts and final weight, then take payment by card over the phone or on delivery/pickup.</p>
+      </form>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/js/catalog.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

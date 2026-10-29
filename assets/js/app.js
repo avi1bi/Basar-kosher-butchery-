@@ -92,7 +92,7 @@
           ${a("about.html", "About", "about")}
         </nav>
         <a class="logo" href="index.html" aria-label="BASAR Kosher Butchery — home">
-          <span class="logo-mark">BASAR</span><span class="logo-sub">Kosher <b>·</b> Butchery</span>
+          <img src="assets/img/brand/basar-logo.png" alt="BASAR Kosher Butchery" width="900" height="273">
         </a>
         <div class="header-tools">
           <a class="hide-sm tool-link" href="about.html#contact">Contact</a>
@@ -113,7 +113,7 @@
       <div class="wrap">
         <div class="footer-grid">
           <div>
-            <a class="logo" href="index.html"><span class="logo-mark">BASAR</span><span class="logo-sub">Kosher <b>·</b> Butchery</span></a>
+            <a class="logo" href="index.html" aria-label="BASAR Kosher Butchery — home"><img src="assets/img/brand/basar-logo-full.png" alt="BASAR Kosher Butchery — Premium Beef &amp; Lamb" width="1400" height="527"></a>
             <p>Premium beef and lamb, Glatt Beit Yosef with Sephardic nikkur achoraim, under the supervision of Badatz Mekor Chaim. Cut by hand, to order.</p>
           </div>
           <div><h4>Shop</h4><ul>${CATEGORIES.map(c => `<li><a href="shop.html?cat=${c.id}">${c.name}${c.soon ? " — soon" : ""}</a></li>`).join("")}</ul></div>
@@ -496,7 +496,7 @@ Notes: ${data.notes || "—"}`;
       Cart.save([]);
       $("#cart-wrap").innerHTML = `
         <div class="confirm">
-          <div class="check">✓</div>
+          <img class="seal" src="assets/img/brand/basar-seal.png" alt="BASAR Kosher Butchery seal">
           <span class="eyebrow">Order ${orderNo}</span>
           <h1 style="font-size:3rem">Thank you, ${esc(data.name.split(" ")[0])}.</h1>
           <p class="lead">Your order request has been prepared. Our butchers will call you at <strong>${esc(data.phone)}</strong> to confirm cuts and timing. Payment is taken on confirmation, by actual weight.</p>

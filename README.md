@@ -2,7 +2,14 @@
 
 A static, dependency-free website for BASAR Kosher Butchery: premium Glatt Beit Yosef beef and lamb with Sephardic nikkur achoraim, under the supervision of Badatz Mekor Chaim.
 
-Open `index.html` in a browser, or host the folder on any static host (GitHub Pages, Netlify, etc.).
+Open `index.html` in a browser, or host the folder on any static host.
+
+### Publish on GitHub Pages
+1. In the repository on GitHub: **Settings → Pages**.
+2. Under **Build and deployment**, set **Source** to *Deploy from a branch*.
+3. Pick the branch that holds the site and the **/ (root)** folder, then **Save**.
+4. After a minute the site is live at `https://avi1bi.github.io/Basar-kosher-butchery-/`.
+5. Optional: add your own domain under **Custom domain** (for example `basarbutchery.com`) and tick **Enforce HTTPS**.
 
 ## Pages
 | Page | What it does |
@@ -19,6 +26,7 @@ Spices & Rubs and Kosher Wines are shown as **Coming soon** with an email "notif
 ## Editing
 - **Products, prices, options:** `assets/js/catalog.js` (prices are placeholders, per lb in USD).
 - **Phone, email, address, hours, delivery fee:** the `STORE` object at the bottom of `catalog.js`.
+- **Logo & seal:** `assets/img/brand/` (header wordmark, full lockup, round seal, favicon).
 - **Photos:** `assets/img/products/<product-id>.jpg` (16:9 works best). Until a photo exists, the site shows a branded placeholder automatically.
 
 ## Product photography

@@ -501,7 +501,7 @@ Notes: ${data.notes || "—"}`;
           <h1 style="font-size:3rem">Thank you, ${esc(data.name.split(" ")[0])}.</h1>
           <p class="lead">Your order request has been prepared. Our butchers will call you at <strong>${esc(data.phone)}</strong> to confirm cuts and timing. Payment is taken on confirmation, by actual weight.</p>
           <p style="margin:30px 0 10px"><a class="btn btn--ox" id="send-mail" href="mailto:${STORE.email}?subject=${encodeURIComponent("Order " + orderNo)}&body=${encodeURIComponent(body)}">Send order to the butchery</a></p>
-          <p class="fineprint">This opens your email app with the full order filled in.</p>
+          <p class="fineprint">This opens your email app with the full order filled in. If it doesn't open, email us at <strong style="user-select:all">${esc(STORE.email)}</strong> or call ${esc(STORE.phone)}.</p>
           <p style="margin-top:30px"><a class="link-arrow" href="shop.html">Continue shopping</a></p>
         </div>`;
       window.scrollTo({ top: 0, behavior: "smooth" });
